@@ -7,6 +7,7 @@
 
 hi clear
 syntax reset
+hi CursorLine term=bold cterm=bold guibg=Grey40
 "if exists('g:colors_name')
   "unlet g:colors_name
 "endif
@@ -673,7 +674,7 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
   call <sid>X('liquidKeyword',   s:uno_3, '', '')
   " }}}
 
-" Delete functions =========================================================={{{
+  " Delete functions =========================================================={{{
   delf <SID>X
   delf <SID>rgb
   delf <SID>color
@@ -683,7 +684,7 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
   delf <SID>grey_color
   delf <SID>grey_level
   delf <SID>grey_number
-"}}}
+  "}}}
 
 endif
 "}}}
