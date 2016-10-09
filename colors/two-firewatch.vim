@@ -7,7 +7,6 @@
 
 hi clear
 syntax reset
-hi CursorLine term=bold cterm=bold guibg=Grey40
 "if exists('g:colors_name')
   "unlet g:colors_name
 "endif
@@ -303,6 +302,7 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
   "}}}
 
   " Vim editor color --------------------------------------------------------{{{
+  call <sid>X('Normal',       s:syntax_fg,      s:syntax_bg,          '')
   call <sid>X('bold',         '',               '',                   'bold')
   call <sid>X('ColorColumn',  '',               s:syntax_cursor_line, '')
   call <sid>X('Conceal',      '',               '',                   '')
